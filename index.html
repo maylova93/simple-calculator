@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="/scss/style.css">
+    <script src="dist/index.js" defer></script>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <div>
+            <button onclick="pressKey('1')">1</button>
+            <button onclick="pressKey('2')">2</button>
+            <button onclick="pressKey('3')">3</button>
+            <button onclick="pressKey('+')">+</button>
+        </div>
+        <div>
+            <button onclick="pressKey('4')">4</button>
+            <button onclick="pressKey('5')">5</button>
+            <button onclick="pressKey('6')">6</button>
+            <button onclick="pressKey('-')">-</button>
+        </div>
+        <div>
+            <button onclick="pressKey('7')">7</button>
+            <button onclick="pressKey('8')">8</button>
+            <button onclick="pressKey('9')">9</button>
+            <button onclick="pressKey('*')">*</button>
+        </div>
+        <div>
+            <button onclick="pressKey('0')">0</button>
+            <button onclick="pressKey('/')">/</button>
+            <button onclick="pressKey('=')">=</button>
+            <button onclick="pressKey('C')">C</button>
+        </div>
+        <div>
+            <button onclick="pressKey('inv')">1/x</button>
+        </div>
+    </div>
+</body>
+</html>
