@@ -1,18 +1,20 @@
-
 // Variables
+$text-color: #ffffff;
+$button-color: #efefef;
 $primary-color: #ff6f61;
 $secondary-color: #e94e77;
-$button-color: #ffffff;
-$background-gradient-start: #ff9a8b;
-$background-gradient-end: #ff6f61;
-$text-color: #ffffff;
+$highlight-color: #ffcc00; 
+//background Color
+$background-gradient-start: #f3df90;
+$background-gradient-end: #e97b3b;
 $box-shadow: rgba(0, 0, 0, 0.2);
 $input-shadow: rgba(0, 0, 0, 0.2);
-$font-family: 'Bebas Neue', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
+$box-shadow: rgba(98, 0, 0, 0.475);
+$button-shadow: rgba(0, 0, 0, 0.15);
+$text-shadow-color: rgba(0, 0, 0, 0.3);
+//Font
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet');
+$font-family: 'Bebas Neue', sans-serif;
 //Margin:
 $margin:auto;
 

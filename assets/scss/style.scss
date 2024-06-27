@@ -1,14 +1,5 @@
-// Variables
-$primary-color: #ff6f61;
-$secondary-color: #e94e77;
-$button-color: #ffffff;
-$background-gradient-start: #ff9a8b;
-$background-gradient-end: #ff6f61;
-$text-color: #ffffff;
-$box-shadow: rgba(0, 0, 0, 0.2);
-$input-shadow: rgba(0, 0, 0, 0.2);
-$font-family: 'Bebas Neue';
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import 'helpers/_variables.scss';
+@import 'helpers/_animation.scss';
 
 // Styles
 body {
@@ -28,52 +19,66 @@ h1 {
     color: $text-color;
     font-size: 3rem;
     text-align: center;
+    color: $highlight-color;
+    text-shadow: 2px 2px 5px $text-shadow-color;
+    animation: zoomInOut 2s infinite;
 }
 
 #calculator {
-    background: $primary-color;
-    border-radius: 50px;
-    box-shadow: 0 10px 20px $box-shadow;
+    width: 320px;
     padding: 20px;
     width: 320px;
     text-align: center;
     margin-top: 20px;
+    border-radius: 50px;
+    background: $primary-color;
+    box-shadow: 0 10px 20px $box-shadow;
 }
 
 #display {
     width: 85%;
     height: 50px;
     border: none;
+    font-size: 2rem;
     border-radius: 10px;
     margin-bottom: 40px;
     font-size: 2rem;
     padding: 10px;
+    text-align: right;
+    color: $button-color;
     box-shadow: inset 0 2px 4px $input-shadow;
     background: $secondary-color;
     color: $button-color;
     text-align: right;
 }
+
 #calculator div {
     display: grid;
+    gap: 5px;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 button {
     background: $button-color;
     border: none;
-    border-radius: 50%;
+    border-radius: 15px;
     padding: 20px;
-    font-size: 1.1em;
+    margin: 3px;
+    font-size: -1em;
     color: $primary-color;
+    box-shadow: 0 5px 10px $box-shadow;
+    box-shadow: 0 5px 10px $box-shadow;
     transition: background 0.3s ease, transform 0.1s ease;
     box-shadow: 0 5px 10px $box-shadow;
 }
 
 button:hover {
-    background: $secondary-color;
     color: $button-color;
+    background: $secondary-color;
+    box-shadow: 0 8px 15px $button-shadow;
 }
 
 button:active {
     transform: scale(0.95);
 }
+
